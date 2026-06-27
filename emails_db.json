@@ -1,0 +1,92 @@
+{
+  "emails": [
+    {
+      "id": "email-1",
+      "subject": "Double charged for subscription plan",
+      "sender": "John Davis",
+      "senderEmail": "john.davis@globex.com",
+      "date": "2026-06-26T15:46:47.702Z",
+      "body": "Hello, I am writing because I noticed my credit card ending in 4521 was charged twice for the Professional Plan ($49.00) on June 24, 2026. Please refund the duplicate charge immediately. My account id is glo-902-pro. Thanks.",
+      "status": "processed",
+      "category": "Billing",
+      "urgency": "Medium",
+      "sentiment": "Concerned",
+      "keyDetails": {
+        "Account ID": "glo-902-pro",
+        "Card Ending In": "4521"
+      },
+      "summary": "Customer John Davis reports a duplicate $49 charge for the subscription plan and requests a refund.",
+      "draftReply": "Dear John Davis,\n\nThank you for reaching out to our billing support. I sincerely apologize for the duplicate charge on your credit card. \n\nI have retrieved your account details (glo-902-pro) and initiated a manual review of our payment logs. We have identified the duplicate charge of $49.00 and have processed a refund to your card ending in 4521. The funds should reflect back in your account within 3-5 business days.\n\nThank you for your patience, and please let us know if we can help with anything else!\n\nBest regards,\n[Your Name]\nBilling Operations Team (Local Offline Engine Mode)",
+      "approved": false
+    },
+    {
+      "id": "email-2",
+      "subject": "CRITICAL: Database connection failing after update v2.4.1",
+      "sender": "Sarah Miller",
+      "senderEmail": "sarah.m@techstart.io",
+      "date": "2026-06-26T17:04:47.703Z",
+      "body": "Hello support, since we updated your SDK to v2.4.1 an hour ago, our production database connections are intermittently failing with error code CONN_TIMEOUT_901. This is currently blocking 50+ active developers in our team and taking down our customer-facing portal. We need an immediate rollback instruction or patch. Our customer key is TECHSTART-PROD-77.",
+      "status": "processed",
+      "category": "Support Claim",
+      "urgency": "High",
+      "sentiment": "Frustrated",
+      "keyDetails": {
+        "SDK Version": "v2.4.1",
+        "Customer Key": "TECHSTART-PROD-77"
+      },
+      "summary": "Sarah Miller reports critical database timeout errors CONN_TIMEOUT_901 blocking development team after v2.4.1 update.",
+      "draftReply": "Dear Sarah Miller,\n\nI understand the severity of this issue and apologize for the disruption this is causing your dev team. Our engineering leads have been notified of your ticket on customer key TECHSTART-PROD-77.\n\nThis TIMEOUT error v2.4.1 is likely linked to a socket-pooling change. While we compile a hotfix, please roll back your client-side config to v2.4.0 in package.json and redeploy. This will safely restore connection pools immediately. \n\nWe will update you the second the patch is certified.\n\nWith urgency,\n[Your Name]\nSenior Tier 3 Support (Local Offline Engine Mode)",
+      "approved": false
+    },
+    {
+      "id": "email-3",
+      "subject": "Enterprise pricing inquiry for 250 users",
+      "sender": "Robert Mercer",
+      "senderEmail": "mercer.capital@financecorp.com",
+      "date": "2026-06-26T13:28:47.704Z",
+      "body": "Dear Sales Team,\n\nWe are exploring a transition of our communication hubs to your software and want to request a quote for 250 enterprise seats with advanced SSO and 24/7 support. Could you schedule a 15-minute introductory call next Tuesday to discuss custom volume discounts?\n\nBest regards,\nRobert Mercer\nMercer Capital",
+      "status": "processed",
+      "category": "Sales Inquiry",
+      "urgency": "Medium",
+      "sentiment": "Inquisitive",
+      "keyDetails": {},
+      "summary": "Robert Mercer requests an enterprise hub transition pricing quote for 250 seats with SSO support.",
+      "draftReply": "Dear Robert Mercer,\n\nThank you for your interest in our Enterprise platform! We would be delighted to host Mercer Capital and provide top-tier collaboration tools for your 250 seats.\n\nOur Enterprise plan includes full SAML SSO, audit logging, and 24/7 priority support. I have drafted a custom package reflecting bulk seat discounts and can coordinate an introductory call for next Tuesday. Let me know if 10:00 AM EST works for you.\n\nWarm regards,\n[Your Name]\nEnterprise Accounts Director (Local Offline Engine Mode)",
+      "approved": false
+    },
+    {
+      "id": "email-4",
+      "subject": "Feedback regarding the dark mode accent colors",
+      "sender": "Alisha Harris",
+      "senderEmail": "alisha.h@designhouse.co",
+      "date": "2026-06-26T08:16:47.704Z",
+      "body": "Hi guys! I love using your dashboard, but I noticed the high-contrast yellow in dark mode is slightly hard on the eyes when reading logs for several hours. A softer pastel yellow or light teal would be awesome! Otherwise, great product.",
+      "status": "processed",
+      "category": "Feedback",
+      "urgency": "Low",
+      "sentiment": "Helpful",
+      "keyDetails": {},
+      "summary": "Customer Alisha Harris provides constructive UI styling feedback on the yellow dark-mode highlights.",
+      "draftReply": "Hi Alisha Harris,\n\nThank you for sending over this feedback! You are completely right—the high-contrast yellow highlights can cause eye strain under prolonged night work. \n\nI have logged a feature request ticket in our design board to explore softer pastel yellow highlight themes or high-contrast adjustments. We love hearing suggestions from our users!\n\nCheers,\n[Your Name]\nProduct Design Team (Local Offline Engine Mode)",
+      "approved": false
+    },
+    {
+      "id": "email-5",
+      "subject": "Boost your organic traffic by 400% in 15 days guaranteed!!",
+      "sender": "SEO King 99",
+      "senderEmail": "seo-king-99@growth-hackerz-seo.biz",
+      "date": "2026-06-25T18:16:47.704Z",
+      "body": "Hey website owner!\n\nWe audited your site and found 14 critical indexing errors that are costing you thousands of visitors. Reply to this email to get a free 30-minute consultation with our top SEO growth experts. Do not reply to opt-out.",
+      "status": "processed",
+      "category": "Support Claim",
+      "urgency": "High",
+      "sentiment": "Frustrated",
+      "keyDetails": {},
+      "summary": "Sarah Miller reports critical database timeout errors CONN_TIMEOUT_901 blocking development team after v2.4.1 update.",
+      "draftReply": "Dear SEO King 99,\n\nI understand the severity of this issue and apologize for the disruption this is causing your dev team. Our engineering leads have been notified of your ticket on customer key N/A.\n\nThis TIMEOUT error v2.4.1 is likely linked to a socket-pooling change. While we compile a hotfix, please roll back your client-side config to v2.4.0 in package.json and redeploy. This will safely restore connection pools immediately. \n\nWe will update you the second the patch is certified.\n\nWith urgency,\n[Your Name]\nSenior Tier 3 Support (Local Offline Engine Mode)",
+      "approved": false
+    }
+  ],
+  "queue": [],
+  "reports": []
+}

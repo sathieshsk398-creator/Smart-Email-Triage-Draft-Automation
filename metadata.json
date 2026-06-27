@@ -1,0 +1,6 @@
+{
+  "name": "Smart Email Triage & Draft Automation",
+  "description": "An automated customer inbox workspace with real-time background task queues, zero-shot text classification, and Gemini AI-powered draft response suggestions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@keyframes scaleUp {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes infiniteLoading {
+  0% {
+    left: -100%;
+    width: 50%;
+  }
+  50% {
+    left: 25%;
+    width: 70%;
+  }
+  100% {
+    left: 100%;
+    width: 50%;
+  }
+}
+
+.animate-scale-up {
+  animation: scaleUp 0.18s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-infinite-loading {
+  position: relative;
+  animation: infiniteLoading 1.4s ease-in-out infinite;
+}
+
+/* Custom modern scrollbars */
+.scrollbar-thin::-webkit-scrollbar {
+  height: 4px;
+  width: 4px;
+}
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
