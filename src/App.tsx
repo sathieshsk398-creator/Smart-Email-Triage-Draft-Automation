@@ -79,7 +79,6 @@ export default function App() {
       console.warn('WebSocket connection closed. Retrying in 3s...');
       setWsConnected(false);
       setTimeout(() => {
-        // Simple reconnect logic if component still mounted
         if (socketRef.current === socket) {
           setWsConnected(false);
         }
@@ -90,6 +89,24 @@ export default function App() {
       socket.close();
     };
   }, []);
+
+  // 🚀 Custom Function: Backend-க்கு Real Email அனுப்பச் சொல்லும் API call
+  const sendRealEmailAlert = async (emailData: { sender: string; subject: string; body: string }) => {
+    try {
+      await fetch('http://localhost:5000/api/send-email', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          to: 'sathieshsk398-creator@gmail.com', // இங்க உங்க நிஜமான ஜிமெயில் ஐடி குடுத்திருக்கேன் boss!
+          subject: `🚨 New Smart Triage Alert: ${emailData.subject}`,
+          text: `Hi Sathiesh,\n\nYour app received a new simulated email from ${emailData.sender}.\n\nContent:\n"${emailData.body}"\n\n- Smart Email Triage Automation Suite`
+        }),
+      });
+      console.log('Real email notification dispatched to backend.');
+    } catch (err) {
+      console.error('Backend server not running or failed to send real email alert:', err);
+    }
+  };
 
   // API Call: Inject incoming custom customer email
   const handleInjectEmail = async (newEmail: { sender: string; senderEmail: string; subject: string; body: string }) => {
@@ -103,6 +120,9 @@ export default function App() {
       if (data.email) {
         setSelectedEmailId(data.email.id);
         setActiveTab('workspace');
+        
+        // 🔥 இங்க ரியல் மெயில் அலர்ட் ஃபங்க்ஷனை ட்ரிக்கர் பண்றோம்!
+        await sendRealEmailAlert(newEmail);
       }
     } catch (err) {
       console.error('Error injecting email:', err);
