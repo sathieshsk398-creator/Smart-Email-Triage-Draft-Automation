@@ -4,7 +4,7 @@
 
 This contains everything you need to run your app locally.
 
-View your app in AI Studio: https://smart-email-triage-draft-automation-1.onrender.com
+View my app in: https://smart-email-triage-draft-automation-1.onrender.com
 
 ## Run Locally
 
