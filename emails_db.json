@@ -1,6 +1,22 @@
 {
   "emails": [
     {
+      "id": "email-1782755031327",
+      "subject": "Failed premium renewal charge #TX-901",
+      "sender": "Thomas Shelby",
+      "senderEmail": "tom@shelbyco.ltd",
+      "date": "2026-06-29T17:43:51.327Z",
+      "body": "Hi, our automated company payment card was declined for renewal invoice #TX-901. Our account name is ShelbyCo and we need to prevent service interruptions. Could you resubmit the invoice or let us know if there is a backup billing interface? Thank you.",
+      "status": "processed",
+      "category": "Billing",
+      "urgency": "Medium",
+      "sentiment": "Concerned",
+      "keyDetails": {},
+      "summary": "Customer John Davis reports a duplicate $49 charge for the subscription plan and requests a refund.",
+      "draftReply": "Dear Thomas Shelby,\n\nThank you for reaching out to our billing support. I sincerely apologize for the duplicate charge on your credit card. \n\nI have retrieved your account details (N/A) and initiated a manual review of our payment logs. We have identified the duplicate charge of $49.00 and have processed a refund to your card ending in 4521. The funds should reflect back in your account within 3-5 business days.\n\nThank you for your patience, and please let us know if we can help with anything else!\n\nBest regards,\n[Your Name]\nBilling Operations Team (Local Offline Engine Mode)",
+      "approved": false
+    },
+    {
       "id": "email-1782670521136",
       "subject": "Failed premium renewal charge #TX-901",
       "sender": "Thomas Shelby",
@@ -113,6 +129,16 @@
       "createdAt": "2026-06-28T18:15:21.140Z",
       "emailId": "email-1782670521136",
       "completedAt": "2026-06-28T18:15:24.172Z"
+    },
+    {
+      "id": "task-1782755031331",
+      "type": "triage_email",
+      "status": "completed",
+      "progress": 100,
+      "message": "Successfully triaged email from Thomas Shelby.",
+      "createdAt": "2026-06-29T17:43:51.331Z",
+      "emailId": "email-1782755031327",
+      "completedAt": "2026-06-29T17:43:54.386Z"
     }
   ],
   "reports": []
