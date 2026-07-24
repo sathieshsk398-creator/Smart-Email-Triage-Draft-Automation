@@ -6,7 +6,7 @@ Built with a React + TypeScript frontend, an Express/WebSocket backend, and Goog
 
 ---
 
-## Overview
+## 📋 Overview
 
 Support and sales inboxes are noisy: billing complaints, critical bug reports, sales inquiries, spam, and product feedback all land in the same queue. This project simulates an automated triage layer that sits in front of that inbox and does the first pass of work for a human agent:
 
@@ -18,7 +18,7 @@ Support and sales inboxes are noisy: billing complaints, critical bug reports, s
 
 All processing runs through an asynchronous background task queue with live progress updates pushed to the UI over WebSockets, so triage doesn't block the interface and multiple emails can be processed in sequence without a page reload.
 
-## Key Features
+## ✨Key Features
 
 - **AI-Powered Classification** — Each email is analyzed by Gemini and categorized as a Support Claim, Billing issue, Sales Inquiry, Feedback, or Spam, with an associated urgency level and sentiment.
 - **Structured Detail Extraction** — Account IDs, invoice numbers, software versions, and other key-value details are pulled directly from the email body.
@@ -31,7 +31,7 @@ All processing runs through an asynchronous background task queue with live prog
 - **Graceful Offline Fallback** — If no Gemini API key is configured, the app automatically switches to a high-fidelity local heuristic engine (keyword/regex-based) so the full workflow remains demoable without an API key.
 - **Persistent State** — Emails, queue tasks, and reports are persisted to a local JSON file so state survives server restarts.
 
-## Tech Stack
+## 🛠️Tech Stack
 
 | Layer | Technology |
 |---|---|
@@ -64,7 +64,7 @@ All processing runs through an asynchronous background task queue with live prog
 
 The Express server exposes REST endpoints for managing emails, tasks, and reports, and broadcasts state changes to all connected clients over a WebSocket connection so the UI updates instantly as background jobs progress.
 
-## Getting Started
+## 🚀Getting Started
 
 ### Prerequisites
 
@@ -109,7 +109,7 @@ npm start
 ```
 
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 ├── server.ts                  # Express + WebSocket backend, task queue, Gemini integration
